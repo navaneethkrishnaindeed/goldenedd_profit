@@ -5,6 +5,7 @@ import 'package:goldenegg_profit/domain/router/router.dart';
 import 'package:goldenegg_profit/domain/theme/theme.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
+import 'presentation/app.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,19 +15,6 @@ void main() async {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => GetStartBloc(),
-      child: MaterialApp.router(
-        routerConfig: RouterGo.router,
-        debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
-        theme: theme,
-      ),
-    );
-  }
-}
+
+

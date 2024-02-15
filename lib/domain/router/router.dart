@@ -63,3 +63,28 @@ class RouterGo {
     ),
   ]);
 }
+//===============================
+
+
+mixin RoutPaths {
+  static const String getStated  = "/GET_STARTED";
+  // static const String home = "/HOME";
+  // static const String login = "/LOGIN";
+  // static const String numPadScreen = "/NUM_PAD_SCREEN";
+  // static const String keyBoardScreen = "/KEY_BOARD_SCREEN";
+  // static const String assignDriverScreen = "/ASSIGN_DRIVER_AMBULANCE_MODAL";
+  // static const String ambulanceSearchModal = "/AMBULANCE_SEARCH_MODAL";
+  // static const String maps = "/MAPS";
+}
+
+abstract class GetNamedRouts {
+  static getRouts() {
+    return {
+      RoutPaths.getStated: (context) => const GetStart(),
+      // RoutPaths.home: (context) => const HomeScreen(),
+      // RoutPaths.assignDriverScreen: (context) => const AmbulanceList(),
+      // RoutPaths.maps: (context) => GoogleMapScreen(),
+      // RoutPaths.login: (context) => const LoginScreen()
+    };
+  }
+}

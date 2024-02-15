@@ -32,7 +32,7 @@ class HomePage extends StatelessWidget {
                       const Color(0xFFB37A1B).withOpacity(0.6)
                     ]),
                   ),
-                  child: ,
+                  // child: ,
                 ),
               )
             ],
